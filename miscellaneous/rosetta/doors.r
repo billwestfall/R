@@ -6,4 +6,4 @@ while(x > 0)
 if(x = y) {
 print(y); print(" door")}
 else {
-x - 1}
+x <- x-1}
