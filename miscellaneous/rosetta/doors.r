@@ -3,7 +3,7 @@
 x <- 100
 y <- sample(1:100, 1)
 while(x > 0) 
-if(x = y) {
+if(x == y) {
 print(y); print(" door")}
 else {
 x <- x-1}
