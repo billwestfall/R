@@ -1,5 +1,5 @@
 # 100 doors challenge with R
-
+# run as rscript doors.r
 
 y <- sample(1:100, 1)
 
