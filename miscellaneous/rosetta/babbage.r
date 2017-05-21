@@ -7,5 +7,5 @@ y <- (269696)
 while (x > 0)
 {x <- x+1; z <- (x * x);
 if(y %in% z) {
-print(z); print(" Babbage number") break;}
+print(z) break; print(" Babbage number")}
 }
