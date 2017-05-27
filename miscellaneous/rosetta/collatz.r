@@ -1,7 +1,8 @@
 # Collatz problem with R
 # run as rscript collatz.r
 
-x <- readline("Please enter a positive integer")
+z <- readline("Please enter a positive integer")
+x <- as.integer(z)
 
 while (x != 1)
 if(x %% 2 == 0 ) {
