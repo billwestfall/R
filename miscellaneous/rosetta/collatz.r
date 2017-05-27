@@ -1,17 +1,11 @@
-fun <- function(){
-  x <- readline("What is the value of x?")  
-  y <- readline("What is the value of y?")
-  t <- readline("What are the T values?")
-  v <- readline("What are the V values?")
+# Collatz problem with R
+# run as rscript collatz.r
 
-  x <- as.numeric(unlist(strsplit(x, ",")))
-  y <- as.numeric(unlist(strsplit(y, ",")))
-  t <- as.numeric(unlist(strsplit(t, ",")))
-  v <- as.numeric(unlist(strsplit(v, ",")))
+x <- readline("Please enter a positive integer")
 
-  out1 <- x + y
-  out2 <- t + v
-
-  return(list(out1, out2))
-
+while (x != 1)
+if(x %% 2 == 0 ) {
+x = x /2; print(x)}
+  else
+    {x = (3 * x) + 1; print(x)}
 }
