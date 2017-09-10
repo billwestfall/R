@@ -1,0 +1,50 @@
+> 1.1
+[1] 1.1
+> 2
+[1] 2
+> 2^1023
+[1] 8.988466e+307
+> 0x1
+[1] 1
+> 0xFFFF
+[1] 65535
+> typeof(1)
+[1] "double"
+> typeof(1:1)
+[1] "integer"
+> typeof(as(1, "integer"))
+[1] "integer"
+> v <- c(173, 12, 1.12312, -93)
+> v
+[1] 173.00000  12.00000   1.12312 -93.00000
+> (2^1023 + 1) == 2^1023
+[1] TRUE
+> 2^1024
+[1] Inf
+> 0+1i ^ 2
+[1] -1+0i
+> sqrt(-1+0i)
+[1] 0+1i
+> exp(0+1i * pi)
+[1] -1+0i
+> sqrt(-1)
+[1] NaN
+Warning message:
+In sqrt(-1) : NaNs produced
+> "hello"
+[1] "hello"
+> identical("\"hello\"", '"hello"')
+[1] TRUE
+> identical('\'hello\'', "'hello'")
+[1] TRUE
+>  numbers <- c("one", "two", "three", "four", "five")
+> numbers
+[1] "one"   "two"   "three" "four"  "five" 
+> x <- 1
+> x <- 1
+> x1 <- 1
+> X1 <- 2
+> x1
+[1] 1
+> X1
+[1] 2
