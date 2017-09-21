@@ -85,3 +85,16 @@ Error: object 'u' not found
 > v
 [1] 2
 > 
+> typeof(`if`)
+[1] "special"
+> x <- 10
+> y <- c(8,10,12,3,17)
+> if (x < y) x else y
+[1]  8 10 12  3 17
+Warning message:
+In if (x < y) x else y :
+  the condition has length > 1 and only the first element will be used
+> a <- c("a", "a", "a", "a", "a")
+> b <- c("b", "b", "b", "b", "b")
+> ifelse(c(TRUE, FALSE, TRUE, FALSE, TRUE), a, b)
+[1] "a" "b" "a" "b" "a"
