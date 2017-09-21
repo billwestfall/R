@@ -1,0 +1,87 @@
+> x <- 1
+> x1 <- 1
+> X1 <- 2
+> x1
+[1] 1
+> X1
+[1] 2
+> 2
+[1] 2
+> `1+2=3` <- "hello"
+> `1+2=3`
+[1] "hello"
+> c
+function (..., recursive = FALSE)  .Primitive("c")
+> c <- 1
+> c
+[1] 1
+> v <- c(1, 2, 3)
+> v
+[1] 1 2 3
+> 1 + 19
+[1] 20
+> 5 * 4
+[1] 20
+> 41 %% 21
+[1] 20
+> 20 ^ 2
+[1] 400
+> 21 %% 2
+[1] 1
+> 21%/% 2
+[1] 10
+> `%myop%` <- function(a,b) {2*a + 2*b}
+> 1 %myop% 1
+[1] 4
+> 1 %myop% 2
+[1] 6
+> x <- c(1,2,3,4,5)
+> x[3]
+[1] 3
+> max(1,2)
+[1] 2
+> -7
+[1] -7
+> ?`?`
+> x <- 1
+> y <- list(shoes="loafers",hat="Yankees cap", shirt="white")
+> z <- function(a,b,c) {a ^ b / c}
+> v <- c(1,2,3,4,5,6,7,8)
+> dim(v) <- c(2,4)
+> v[2,2] <- 10
+> formal(z) <- alist(a=1,b=2, c=3)
+Error in formal(z) <- alist(a = 1, b = 2, c = 3) : 
+  could not find function "formal<-"
+> formals(z) <- alist(a=1,b=2, c=3)
+> x <- 1
+> y <- 2
+> z <- 3
+> x <- 1; y <- 2; z <- 3
+> 2 * (5 + 1)
+[1] 12
+> f <- function (x)x
+> 2 * f(5 + 1)
+[1] 12
+> 2 * 5 + 1
+[1] 11
+> 2 * (5 + 1)
+[1] 12
+> f <- function() {x <- 1; y <- 2; x + y}
+> f()
+[1] 3
+> {x <- 1; y <- 2; x + y}
+[1] 3
+> f <- function() {u <- 1; v <- 2; u + v}
+> u
+Error: object 'u' not found
+> v
+     [,1] [,2] [,3] [,4]
+[1,]    1    3    5    7
+[2,]    2   10    6    8
+> {u <- 1; v <- 2; u + v}
+[1] 3
+> u
+[1] 1
+> v
+[1] 2
+> 
